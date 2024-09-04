@@ -1,0 +1,33 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build && npx tailwindcss -i ./src/styles.css -o ./dist/output.css",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.14.3",
+    "@tailwindcss/forms": "^0.5.8",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.15",
+    "solid-js": "^1.8.20"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-solid": "^2.10.2",
+    "vite-tsconfig-paths": "^4.3.1"
+  },
+  "description": "```bash $ npm install # or pnpm install or yarn install ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Mario Santos <marioosantos238412@gmail.com>",
+  "license": "MIT"
+}
