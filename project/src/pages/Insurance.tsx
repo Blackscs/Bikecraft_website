@@ -3,6 +3,7 @@ import InfoCard from "components/cards/InfoCard";
 import PlanPaymentCard from "components/cards/PlanPaymentCard";
 import Header from "components/Header";
 import Page from "components/Page";
+import Question from "components/Question";
 
 export default function Insurance() {
   return (
@@ -98,44 +99,49 @@ export default function Insurance() {
         </div>
       </section>
 
-      <section class="w-full bg-black pt-32 pb-32">
-        <div class="mx-auto max-w-[1400px]">
-          <p class="text-7xl poppins-semibold mb-16 text-white">
+      <section class="w-full pt-32 pb-32">
+        <div class="max-w-[1400px] mx-auto">
+          <p class="text-7xl poppins-semibold mb-16 text-black">
             perguntas frequentes<span class="text-amber-400">.</span>
           </p>
         </div>
 
-        <ul>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Qual a forma de pagamento vocês aceitam?
-            </li>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Como posso entrar em contato?
-            </li>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Vocês possuem algum desconto?
-            </li>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Qual a garantia que possuo?
-            </li>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Posso parcelar boleto?
-            </li>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Quantas trocas posso fazer ao ano?
-            </li>
-          <li class="flex gap-2 poppins-semibold-18">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
-            Qual Bikcraft devo escolher para o meu tamanhow
-            </li>
-        </ul>
-
+        <div class="max-w-[1400px] mx-auto ">
+          <ul class="max-x-[1400px] mx-auto h-[600px] overflow-hidden">
+            <Question
+              questionContent="Qual a forma de pagamento vocês aceitam? Como posso entrar em contato?"
+              responseContent="  Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO
+                e American Express. Para pagamentos à vista também aceitamos PIX e
+                Boleto através do PagSeguro."
+              colored={true}
+            />
+            <Question
+              questionContent="Vocês possuem algum desconto?"
+              responseContent="Sim, oferecemos descontos especiais durante todo o ano! Fique de olho nas nossas promoções sazonais e campanhas de descontos no site. Além disso, você pode se cadastrar na nossa newsletter para receber cupons exclusivos e ficar por dentro das nossas ofertas."
+              colored={false}
+            />
+            <Question
+              questionContent="Qual a garantia que possuo?"
+              responseContent="Todas as nossas bicicletas vêm com uma garantia de 2 anos para o quadro e 1 ano para componentes mecânicos e elétricos, contra defeitos de fabricação. A garantia cobre reparos ou substituição de peças defeituosas, desde que o uso da bicicleta esteja de acordo com as recomendações do fabricante."
+              colored={true}
+            />
+            <Question
+              questionContent="Posso parcelar boleto?"
+              responseContent="Atualmente, não oferecemos a opção de parcelamento de boletos. No entanto, você pode parcelar sua compra em até 12x sem juros no cartão de crédito. Confira as condições e opções de pagamento no fechamento do pedido."
+              colored={false}
+            />
+            <Question
+              questionContent="Quantas trocas posso fazer ao ano?"
+              responseContent="Oferecemos até 3 trocas por ano, desde que os produtos estejam em perfeito estado, sem sinais de uso e na embalagem original. As trocas são permitidas em casos de tamanho ou cor incorretos ou, ainda, em situações de defeito de fabricação. Consulte nossa política de trocas para mais detalhes."
+              colored={true}
+            />
+            <Question
+              questionContent="Qual Bikcraft devo escolher para o meu tamanho?"
+              responseContent="Para escolher a Bikcraft ideal para o seu tamanho, recomendamos que você verifique nossa tabela de tamanhos disponível na página de cada produto. Normalmente, a escolha é feita com base na sua altura. Se precisar de ajuda, nossa equipe está pronta para auxiliá-lo! Entre em contato conosco pelo chat ou pelo telefone para mais informações."
+              colored={false}
+            />
+          </ul>
+        </div>
       </section>
     </Page>
   );
