@@ -2,14 +2,14 @@ import { A } from "@solidjs/router";
 import BikePreviewCard from "components/cards/BikePreviewCard";
 import InfoCard from "components/cards/InfoCard";
 import PlanPaymentCard from "components/cards/PlanPaymentCard";
-import Page from "components/Page";
+import Section from "components/layout/Section";
 
 export default function Home() {
   return (
-    <Page>
-      <section class="relative w-full items-center flex">
-        <div class="items-center mx-auto max-w-[1650px] gap-44 justify-center flex-col mt-28 2xl:mt-0 2xl:flex-row 2xl:flex px-10">
-          <div class="text-white m-auto w-3/4 2xl:w-1/2">
+    <>
+      <Section>
+        <div class="mt-30 gap-14 items-center m-auto mb-32 grid grid-cols-1 xl:grid-cols-2">
+          <div class="text-white m-auto max-w-4xl">
             <p class="poppins-semibold text-7xl leading-[4.5rem]">
               Bicicletas feitas sob medida<span class="text-amber-400">.</span>
             </p>
@@ -23,23 +23,26 @@ export default function Home() {
             </button>
           </div>
 
-          <div class="h-[700px] m-auto w-3/4 py-24 2xl:h-[58rem] 2xl:py-0 2xl:w-1/2 ">
+          <div class="m-auto py-24 items-center hidden xl:flex">
             <img
               src="src/assets/bikes/home-page/bike_initial.svg"
               alt="Bike initial"
               class="object-cover w-full h-full"
             />
           </div>
+
+          <div class="absolute bottom-0 right-0 top-0 w-full h-[50rem] bg-black -z-10"></div>
         </div>
+      </Section>
 
-        <div class="absolute bottom-0 right-0 top-0 w-full h-[50rem] bg-black -z-10"></div>
-      </section>
+      <Section>
+        <h1 class="mx-auto max-w-screen-2xl px-10 flex">
+          <p class="text-7xl poppins-semibold mb-16">
+            escolha a sua<span class="text-amber-400">.</span>
+          </p>
+        </h1>
 
-      <section class="mt-36 mx-auto max-w-[1650px]">
-        <p class="text-7xl poppins-semibold mb-16">
-          escolha a sua<span class="text-amber-400">.</span>
-        </p>
-        <div class="flex justify-center gap-7">
+        <div class="flex justify-center gap-7 mb-32">
           <BikePreviewCard
             srcThumbnail="src/assets/bikes/home-page/magic_might.svg"
             alt="Magic Might bike"
@@ -59,11 +62,11 @@ export default function Home() {
             price={3999}
           />
         </div>
-      </section>
+      </Section>
 
-      <section class="relative my-36 items-center">
-        <div class="flex justify-between items-center m-auto max-w-[1650px] gap-44 px-10">
-          <div class="gap-12 w-1/2">
+      <Section>
+        <div class="mt-30 gap-14 items-center justify-center mb-32 grid grid-cols-1 xl:grid-cols-2">
+          <div class="gap-12 max-w-4xl">
             <p class="roboto-medium text-2xl leading-8 text-white opacity-70 mb-11">
               TECNOLOGIA AVANÇADA
             </p>
@@ -98,7 +101,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div class="h-[600px] 2xl:h-[82rem] m-auto w-1/2">
+          <div class="m-auto hidden xl:flex">
             <img
               src="src/assets/illustrations/toolkit.svg"
               alt="toolkit image"
@@ -107,70 +110,67 @@ export default function Home() {
           </div>
         </div>
         <div class="absolute inset-0 m-auto w-full h-[60rem] bg-black -z-10"></div>
-      </section>
+      </Section>
 
-      <section class="mt-36 w-full">
-        <div class="mx-auto max-w-[1650px]">
-          <p class="text-7xl poppins-semibold mb-24">
-            nossos parceiros<span class="text-amber-400">.</span>
-          </p>
 
-          <ul class="grid gap-[2px] grid-cols-2 lg:grid-cols-4 bg-slate-500/20">
-            <li class="flex justify-center bg-white p-11">
-              <img
-                src="src/assets/logos/partners/caravan.svg"
-                alt="caravan icon"
-              />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img src="src/assets/logos/partners/dogs.svg" alt="dogs icon" />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img
-                src="src/assets/logos/partners/flexblog.svg"
-                alt="flexblog icon"
-              />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img
-                src="src/assets/logos/partners/handel.svg"
-                alt="handel icon"
-              />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img
-                src="src/assets/logos/partners/wildbeast.svg"
-                alt="wildbeast icon"
-              />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img
-                src="src/assets/logos/partners/lescone.svg"
-                alt="lescone icon"
-              />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img src="src/assets/logos/partners/ranek.svg" alt="ranek icon" />
-            </li>
-            <li class="flex justify-center bg-white p-11">
-              <img
-                src="src/assets/logos/partners/surfbot.svg"
-                alt="surfbot icon"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
+      <Section>
+      <div class="mx-auto max-w-screen-2xl px-10 flex py-10 pb-5">
+        <p class="text-7xl poppins-semibold mb-24">
+          nossos parceiros<span class="text-amber-400">.</span>
+        </p>
+      </div>
 
-      <section class="mt-36 w-full bg-amber-400">
-        <div class="mx-auto max-w-[1650px] flex">
-          <div class="w-1/2">
+        <ul class="grid gap-[2px] grid-cols-2 lg:grid-cols-4 bg-slate-500/20 mb-32">
+          <li class="flex justify-center bg-white p-11">
             <img
-              src="src/assets/illustrations/woman_on_bike.svg"
-              alt="woman on bike image"
+              src="src/assets/logos/partners/caravan.svg"
+              alt="caravan icon"
             />
-          </div>
-          <div class="flex flex-col gap-2 w-1/2 mt-auto p-10">
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img src="src/assets/logos/partners/dogs.svg" alt="dogs icon" />
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img
+              src="src/assets/logos/partners/flexblog.svg"
+              alt="flexblog icon"
+            />
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img src="src/assets/logos/partners/handel.svg" alt="handel icon" />
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img
+              src="src/assets/logos/partners/wildbeast.svg"
+              alt="wildbeast icon"
+            />
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img
+              src="src/assets/logos/partners/lescone.svg"
+              alt="lescone icon"
+            />
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img src="src/assets/logos/partners/ranek.svg" alt="ranek icon" />
+          </li>
+          <li class="flex justify-center bg-white p-11">
+            <img
+              src="src/assets/logos/partners/surfbot.svg"
+              alt="surfbot icon"
+            />
+          </li>
+        </ul>
+      </Section>
+
+      <Section>
+        <div class="grid grid-cols-1 xl:grid-cols-2 justify-items-center">
+          <img
+            src="src/assets/illustrations/woman_on_bike.svg"
+            alt="woman on bike image"
+            class="w-full h-full object-cover hidden xl:flex"
+          />
+          <div class="gap-2 mt-auto p-10">
             <div>
               <img
                 src="src/assets/textual/quotation_mark_begin.svg"
@@ -199,36 +199,41 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="w-full bg-black/90 pt-32 pb-32">
-        <div class="mx-auto max-w-[1650px]">
-          <p class="text-7xl poppins-semibold mb-16 text-white">
-            escolha a sua<span class="text-amber-400">.</span>
-          </p>
-          <div class="flex gap-32 justify-center items-center">
-            <PlanPaymentCard
-              details={[
-                "Duas trocas por ano",
-                "Assistência Técnica",
-                "Suporte 08h às 18h",
-                "Cobertura estadual",
-              ]}
-              typePlanGold={false}
-            />
-            <PlanPaymentCard
-              details={[
-                "Cinco trocas por ano",
-                "Assistência especial",
-                "Suporte 24h",
-                "Desconto em parceiros",
-                "Acesso ao Clube Bikcraft",
-              ]}
-              typePlanGold={true}
-            />
-          </div>
+        <div
+          id="background"
+          class="absolute bg-amber-400 top-0 bottom-0 left-0 right-0 -z-10"
+        ></div>
+      </Section>
+
+      <Section>
+        <h1 class="text-7xl poppins-semibold mb-16 text-white py-10 pb-5">
+          escolha o seu plano<span class="text-amber-400">.</span>
+        </h1>
+
+        <div class="gap-32 pb-20 grid grid-cols-1 xl:grid-cols-2 mx-auto">
+          <PlanPaymentCard
+            details={[
+              "Duas trocas por ano",
+              "Assistência Técnica",
+              "Suporte 08h às 18h",
+              "Cobertura estadual",
+            ]}
+            typePlanGold={false}
+          />
+          <PlanPaymentCard
+            details={[
+              "Cinco trocas por ano",
+              "Assistência especial",
+              "Suporte 24h",
+              "Desconto em parceiros",
+              "Acesso ao Clube Bikcraft",
+            ]}
+            typePlanGold={true}
+          />
         </div>
-      </section>
-    </Page>
+        <div class="absolute top-0 bottom-0 right-0 left-0 bg-black opacity-90 -z-10"></div>
+      </Section>
+    </>
   );
 }

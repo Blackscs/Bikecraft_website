@@ -1,4 +1,3 @@
-import { A } from "@solidjs/router";
 import { For, Show } from "solid-js";
 
 interface Props {
@@ -8,8 +7,7 @@ interface Props {
 
 export default function planPaymentCard(props: Props) {
   return (
-    <>
-      <div class="w-[560px] h-full bg-black rounded-xl pt-14 pb-9 px-14">
+      <div class="bg-black rounded-xl pt-14 pb-9 px-14 flex flex-col">
         <div class="flex w-full justify-between">
           <div
             class={`${
@@ -53,6 +51,5 @@ export default function planPaymentCard(props: Props) {
           INSCREVA-SE
         </button>
       </div>
-    </>
   );
 }

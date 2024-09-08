@@ -1,25 +1,23 @@
-import { A } from "@solidjs/router";
 import BikeDetailCard from "components/cards/BikeDetailCard";
-import Page from "components/Page";
+import Section from "components/layout/Section";
 
 export default function Bikes() {
   return (
-    <Page>
-      <section class="py-16 pl-14 w-full bg-black/90">
-        <div class="mx-auto max-w-[1650px]">
-          <div>
-            <p class="roboto-medium text-2xl leading-8 text-white opacity-70 mb-3">
-              TECNOLOGIA AVANÇADA
-            </p>
-            <p class="text-7xl poppins-semibold text-white">
-              nossas bicicletas<span class="text-amber-400">.</span>
-            </p>
-          </div>
+    <>
+      <Section>
+        <div class="py-10">
+          <p class="roboto-medium text-2xl leading-8 text-white opacity-70 mb-3">
+            TECNOLOGIA AVANÇADA
+          </p>
+          <p class="text-7xl poppins-semibold text-white">
+            nossas bicicletas<span class="text-amber-400">.</span>
+          </p>
         </div>
-      </section>
+        <div class="absolute bg-black/90 top-0 bottom-0 left-0 right-0 -z-10"></div>
+      </Section>
 
-      <section class="py-10 mt-28 w-full">
-        <div class="mx-auto max-w-[1650px]">
+      <section class="flex flex-col gap-10 my-20">
+        <Section>
           <BikeDetailCard
             imagePath="src/assets/bikes/bikes-page/nimbus_stark.svg"
             alt="Nimbus Stark image"
@@ -28,11 +26,9 @@ export default function Bikes() {
             title="Nimbus Stark"
             isLightMode={true}
           />
-        </div>
-      </section>
+        </Section>
 
-      <section class="relative py-9 w-full">
-        <div class="mx-auto max-w-[1650px]">
+        <Section>
           <BikeDetailCard
             imagePath="src/assets/bikes/bikes-page/magic_might.svg"
             alt="magic_might image"
@@ -41,12 +37,10 @@ export default function Bikes() {
             title="Magic Might"
             isLightMode={false}
           />
-        </div>
-        <div class="absolute w-3/5 bottom-0 right-0 -z-10 bg-black h-full"></div>
-      </section>
+          <div class="absolute bg-black top-0 bottom-0 left-1/3 right-0 -z-10"></div>
+        </Section>
 
-      <section class="py-9 w-full mb-28">
-        <div class="mx-auto max-w-[1650px]">
+        <Section>
           <BikeDetailCard
             imagePath="src/assets/bikes/bikes-page/nebula_cosmic.svg"
             alt="Nebula Cosmic image"
@@ -55,8 +49,8 @@ export default function Bikes() {
             title="Nebula Cosmic"
             isLightMode={true}
           />
-        </div>
+        </Section>
       </section>
-    </Page>
+    </>
   );
 }

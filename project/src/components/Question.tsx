@@ -6,18 +6,18 @@ interface Props {
   responseContent: string;
 }
 
-const [recentRef, setRecentRef] = createSignal();
+const [recentRef, setRecentRef] = createSignal<null | HTMLLIElement>();
 
 export default function Question(props: Props) {
   const [isOpen, setIsOpen] = createSignal(false);
-  let refer;
-
+  let refer: HTMLLIElement | undefined = undefined;
+  
   createEffect(() => {
-   (refer == recentRef()) ? setIsOpen(true) : setIsOpen(false)
+    setIsOpen(refer === recentRef());
   });
 
   const changeState = () => {
-    setRecentRef(refer)
+    refer !== recentRef() ? setRecentRef(refer) : setRecentRef(null);
   };
 
   return (

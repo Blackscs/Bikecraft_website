@@ -1,11 +1,10 @@
 import { A } from "@solidjs/router";
 import BikePreviewCard from "components/cards/BikePreviewCard";
 import InfoCard from "components/cards/InfoCard";
-import Page from "components/Page";
 
 export default function Internal_bikes() {
   return (
-    <Page>
+    <>
       <section class="py-16 w-full bg-black/90">
         <div class="mx-auto max-w-[1400px]">
           <div>
@@ -191,6 +190,6 @@ export default function Internal_bikes() {
 
         <div class="absolute bottom-0 w-full h-[50rem] bg-black -z-10"></div>
       </section>
-    </Page>
+      </>
   );
 }

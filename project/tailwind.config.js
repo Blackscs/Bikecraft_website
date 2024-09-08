@@ -8,7 +8,9 @@ module.exports = {
     },
     variants: {
       extend: {
-        backgroundColor: ['focus-visible'],
+        boxShadow: {
+          'bottom': '0 4px 6px -1px rgba(0, 0, 0, 0.1)', // Sombra personalizada apenas na parte inferior
+        }
       },
     },
     plugins: [
