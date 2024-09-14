@@ -77,7 +77,7 @@ export default function BudgetForm() {
       <Form class="col-span-3 px-20 h-full bg-white p-20 flex flex-col gap-2 rounded-r-lg">
         <div id="second-col">
           <div class="flex gap-2 mb-2">
-            <img src="src/assets/icons/icon_title.svg" alt="icon title" />
+            <img src="/assets/icons/icon_title.svg" alt="icon title" />
             <p class="poppins-semibold text-xs text-gray-700">DADOS PESSOAIS</p>
           </div>
           <div class="grid grid-cols-2 gap-10">
@@ -183,7 +183,7 @@ export default function BudgetForm() {
           </div>
 
           <div class="flex gap-2 mb-2 mt-10">
-            <img src="src/assets/icons/icon_title.svg" alt="icon title" />
+            <img src="/assets/icons/icon_title.svg" alt="icon title" />
             <p class="poppins-semibold text-xs text-gray-700">ENTREGA</p>
           </div>
           <div class="grid grid-cols-2 gap-10">

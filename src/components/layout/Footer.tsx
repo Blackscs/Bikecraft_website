@@ -7,7 +7,7 @@ export default function Footer() {
         <div class="mx-auto max-w-screen-2xl w-full py-16 grid grid-cols-1 gap-20 sm:gap-0 sm:grid-cols-3">
           {/* Imagem Bikcraft */}
 
-         <img src="src/assets/logos/logo.svg" alt="Bikcraft logo" class="mx-auto"/>
+         <img src="/assets/logos/logo.svg" alt="Bikcraft logo" class="mx-auto"/>
 
           {/* Contato e Logos */}
           <div class="flex flex-col mx-auto">
@@ -20,15 +20,15 @@ export default function Footer() {
             </div>
             <div class="flex gap-5">
               <img
-                src="src/assets/logos/social-media/instagram_footer.svg"
+                src="/assets/logos/social-media/instagram_footer.svg"
                 alt="Instagram icon"
               />
               <img
-                src="src/assets/logos/social-media/facebook_footer.svg"
+                src="/assets/logos/social-media/facebook_footer.svg"
                 alt="Facebook icon"
               />
               <img
-                src="src/assets/logos/social-media/youtube_footer.svg"
+                src="/assets/logos/social-media/youtube_footer.svg"
                 alt="Youtube icon"
               />
             </div>

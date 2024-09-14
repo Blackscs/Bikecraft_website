@@ -38,7 +38,7 @@ export default function planPaymentCard(props: Props) {
           <For each={props.details}>
             {(detail) => (
               <li class="list-none flex gap-1 text-slate-50 roboto-medium text-base xl:text-lg">
-                <img src="src/assets/icons/icon-detail.svg" alt="detail icon" />
+                <img src="/assets/icons/icon-detail.svg" alt="detail icon" />
                 <p>{detail}</p>
               </li>
             )}

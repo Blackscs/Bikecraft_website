@@ -33,15 +33,15 @@ export default function Question(props: Props) {
           class="flex justify-between w-full items-center"
         >
           <span class="flex gap-3 items-center justify-center text-xs md:text-base">
-            <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
+            <img src="/assets/icons/topic_icon.svg" alt="topic icon" />
             {props.questionContent}
           </span>
 
           <Show
             when={isOpen()}
-            fallback={<img src="src/assets/icons/toggle_list_closed.svg" />}
+            fallback={<img src="/assets/icons/toggle_list_closed.svg" />}
           >
-            <img src="src/assets/icons/toggle_list_open.svg" />
+            <img src="/assets/icons/toggle_list_open.svg" />
           </Show>
         </button>
 

@@ -25,7 +25,7 @@ export default function Budget() {
             class="col-span-2 bg-black flex flex-col gap-5 p-20 rounded-l-lg"
           >
             <div class="flex gap-2 ">
-              <img src="src//assets/icons/icon_title.svg" alt="icon title" />
+              <img src="/assets/icons/icon_title.svg" alt="icon title" />
               <p class="poppins-semibold text-xs text-gray-300">
                 BIKCRAFT OU SEGURO
               </p>
@@ -42,20 +42,20 @@ export default function Budget() {
             </div>
 
             <div class="flex gap-2 mb-2">
-              <img src="src//assets/icons/icon_title.svg" alt="icon title" />
+              <img src="/assets/icons/icon_title.svg" alt="icon title" />
               <p class="poppins-semibold text-xs text-gray-300">
                 ESCOLHA A SUA
               </p>
             </div>
 
             <div class="flex flex-col gap-5">
-              <ToggleButtonBike price="4999" srcImage="src//assets/bikes/internal-bike-page/nimbus_stark.svg">
+              <ToggleButtonBike price="4999" srcImage="/assets/bikes/internal-bike-page/nimbus_stark.svg">
                 Nimbus Stark
               </ToggleButtonBike>
-              <ToggleButtonBike price="2499" srcImage="src//assets/bikes/internal-bike-page/magic_might.svg">
+              <ToggleButtonBike price="2499" srcImage="/assets/bikes/internal-bike-page/magic_might.svg">
                 Magic Might
               </ToggleButtonBike>
-              <ToggleButtonBike price="4999" srcImage="src//assets/bikes/internal-bike-page/nebula_cosmic.svg">
+              <ToggleButtonBike price="4999" srcImage="/assets/bikes/internal-bike-page/nebula_cosmic.svg">
                 Nebula Cosmic
               </ToggleButtonBike>
             </div>

@@ -23,18 +23,18 @@ export default function Internal_bikes() {
         <div class="grid lg:grid-cols-2 gap-10 py-10">
           <figure id="three-images-left" class="flex flex-col gap-5">
             <img
-              src="src//assets/bikes/internal-bike-page/nimbus_stark.svg"
+              src="/assets/bikes/internal-bike-page/nimbus_stark.svg"
               alt="Imagem da bicicleta Nimbus Stark"
               class="imgStyle"
             />
             <div class="hidden 2xl:flex gap-10">
               <img
-                src="src//assets/bikes/internal-bike-page/nebula_cosmic.svg"
+                src="/assets/bikes/internal-bike-page/nebula_cosmic.svg"
                 alt="Imagem da bicicleta Nebula Cosmic"
                 class="imgStyle"
               />
               <img
-                src="src//assets/bikes/internal-bike-page/magic_might.svg"
+                src="/assets/bikes/internal-bike-page/magic_might.svg"
                 alt="Imagem da bicicleta Magic Might"
                 class="imgStyle"
               />
@@ -59,7 +59,7 @@ export default function Internal_bikes() {
                 <div class="grid gap-1">
                   <div class="cardsSimpleInfo">
                     <img
-                      src="src//assets/icons/delivery_icon.svg"
+                      src="/assets/icons/delivery_icon.svg"
                       alt="Ícone de entrega"
                       class="imgStyle max-w-5"
                     />
@@ -67,7 +67,7 @@ export default function Internal_bikes() {
                   </div>
                   <div class="cardsSimpleInfo">
                     <img
-                      src="src//assets/icons/box_icon.svg"
+                      src="/assets/icons/box_icon.svg"
                       alt="Ícone de caixa"
                       class="imgStyle max-w-5"
                     />
@@ -86,25 +86,25 @@ export default function Internal_bikes() {
               </h2>
               <div class="bg-black p-16 gap-10 grid md:grid-cols-2 rounded-3xl">
                 <InfoCard
-                  srcIcon="src//assets/icons/bike_icon.svg"
+                  srcIcon="/assets/icons/bike_icon.svg"
                   alt="Ícone de bicicleta"
                   title="Motor Elétrico"
                   description="Permite você viajar distâncias inimagináveis com a sua bike."
                 />
                 <InfoCard
-                  srcIcon="src//assets/icons/velocity_icon.svg"
+                  srcIcon="/assets/icons/velocity_icon.svg"
                   alt="Ícone de velocidade"
                   title="40 km/h"
                   description="A mais rápida bicicleta elétrica disponível hoje no mercado."
                 />
                 <InfoCard
-                  srcIcon="src//assets/icons/crosshair_icon.svg"
+                  srcIcon="/assets/icons/crosshair_icon.svg"
                   alt="Ícone de rastreador"
                   title="Rastreador"
                   description="Rastreador e sistema anti-furto para garantir o seu sossego."
                 />
                 <InfoCard
-                  srcIcon="src//assets/icons/waves_icon.svg"
+                  srcIcon="/assets/icons/waves_icon.svg"
                   alt="Ícone de fibra"
                   title="Fibra de Carbono"
                   description="Maior proteção possível para a sua Bikcraft com fibra de carbono."
@@ -148,13 +148,13 @@ export default function Internal_bikes() {
         </p>
         <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-2">
           <BikePreviewCard
-            srcThumbnail="src//assets/bikes/bikes-page/nimbus_stark.svg"
+            srcThumbnail="/assets/bikes/bikes-page/nimbus_stark.svg"
             alt="Magic Might bike"
             title="Magic Might"
             price={2499}
           />
           <BikePreviewCard
-            srcThumbnail="src//assets/bikes/bikes-page/nebula_cosmic.svg"
+            srcThumbnail="/assets/bikes/bikes-page/nebula_cosmic.svg"
             alt="Nebula Cosmic bike"
             title="Nebula Cosmic"
             price={3999}
@@ -166,7 +166,7 @@ export default function Internal_bikes() {
         <div class="mt-30 gap-14 grid grid-cols-1 xl:grid-cols-2">
           <div class="h-[300px] md:h-[700px]">
             <img
-              src="src//assets/illustrations/man_on_bike.svg"
+              src="/assets/illustrations/man_on_bike.svg"
               alt="man on bike image"
               class="imgStyle"
             />

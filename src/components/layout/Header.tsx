@@ -5,7 +5,7 @@ export default function Header() {
     <header class="bg-black px-10">
       <div class="max-w-screen-xl h-28 flex mx-auto items-center poppins-regular justify-between">
         <A href="/">
-          <img src="src/assets/logos/logo.svg" alt="logo bikcraft" />
+          <img src="/assets/logos/logo.svg" alt="logo bikcraft" />
         </A>
         <nav class="list-none hidden sm:flex">
           <ul class="flex gap-12 text-xl leading-8 text-white">

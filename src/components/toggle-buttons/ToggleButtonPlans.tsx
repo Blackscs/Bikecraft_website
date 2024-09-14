@@ -29,7 +29,7 @@ export default function ToggleButtonPlans(props: ParentProps) {
           <Show when={isToggle()}>
             <img
               class="absolute"
-              src="src/assets/inner_chosen.svg"
+              src="/assets/inner_chosen.svg"
               alt="chosen icon"
             />
           </Show>

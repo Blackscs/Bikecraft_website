@@ -13,7 +13,7 @@ function Detail(props: { srcImage: string }) {
           <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
             <img
               class="w-4"
-              src="src/assets/icons/bike_icon.svg"
+              src="/assets/icons/bike_icon.svg"
               alt="Icon bike"
             />
             <span class="text-xs">Motor Elétrico</span>
@@ -21,7 +21,7 @@ function Detail(props: { srcImage: string }) {
           <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
             <img
               class="w-4"
-              src="src/assets/icons/waves_icon.svg"
+              src="/assets/icons/waves_icon.svg"
               alt="Icon bike"
             />
             <span class="text-xs">Fibra de Carbono</span>
@@ -29,7 +29,7 @@ function Detail(props: { srcImage: string }) {
           <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
             <img
               class="w-4"
-              src="src/assets/icons/velocity_icon.svg"
+              src="/assets/icons/velocity_icon.svg"
               alt="Icon bike"
             />
             <span class="text-xs">40 Km/h</span>
@@ -37,7 +37,7 @@ function Detail(props: { srcImage: string }) {
           <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
             <img
               class="w-4"
-              src="src/assets/icons/crosshair_icon.svg"
+              src="/assets/icons/crosshair_icon.svg"
               alt="Icon bike"
             />
             <span class="text-xs">Rastreador</span>
@@ -85,7 +85,7 @@ export default function ToggleButtonPlans(props: Props) {
             <Show when={isOpen()}>
               <img
                 class="absolute"
-                src="src/assets/inner_chosen.svg"
+                src="/assets/inner_chosen.svg"
                 alt="chosen icon"
               />
             </Show>

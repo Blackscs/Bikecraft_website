@@ -21,7 +21,7 @@ function Details(props: Props) {
               : "text-white opacity-80"
           } flex poppins-medium text-lg opacity-70 gap-2`}
         >
-          <img src="src/assets/icons/bike_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/bike_icon.svg" alt="Icon bike" />
           <span>Motor Elétrico</span>
         </div>
         <div
@@ -31,7 +31,7 @@ function Details(props: Props) {
               : "text-white opacity-80"
           } flex poppins-medium text-lg opacity-70 gap-2`}
         >
-          <img src="src/assets/icons/waves_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/waves_icon.svg" alt="Icon bike" />
           <span>Fibra de Carbono</span>
         </div>
         <div
@@ -41,7 +41,7 @@ function Details(props: Props) {
               : "text-white opacity-80"
           } flex poppins-medium text-lg opacity-70 gap-2`}
         >
-          <img src="src/assets/icons/velocity_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/velocity_icon.svg" alt="Icon bike" />
           <span>40 Km/h</span>
         </div>
         <div
@@ -51,7 +51,7 @@ function Details(props: Props) {
               : "text-white opacity-80"
           } flex poppins-medium text-lg opacity-70 gap-2`}
         >
-          <img src="src/assets/icons/crosshair_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/crosshair_icon.svg" alt="Icon bike" />
           <span>Rastreador</span>
         </div>
       </div>
@@ -124,7 +124,7 @@ export default function BikeDetailCard(props: Props) {
               <Button color="gold">
                 MAIS SOBRE
                 <img
-                  src="src/assets/icons/arrow_right_icon.svg"
+                  src="/assets/icons/arrow_right_icon.svg"
                   alt="Icon arrow"
                 />
               </Button>
