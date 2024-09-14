@@ -1,26 +1,25 @@
 import InfoCard from "components/cards/InfoCard";
 import PlanPaymentCard from "components/cards/PlanPaymentCard";
+import Section from "components/layout/Section";
 import Question from "components/Question";
 
 export default function Insurance() {
   return (
     <>
-      <section class="py-16 w-full bg-black/90">
-        <div class="mx-auto max-w-[1400px]">
-          <div>
-            <p class="roboto-medium text-4xl leading-8 text-white opacity-70 mb-3">
-              ESCOLHA O SEGURO
-            </p>
-            <h1 class="text-7xl poppins-semibold text-white">
-              você seguro<span class="text-amber-400">.</span>
-            </h1>
-          </div>
+      <Section>
+        <div class="mx-auto my-14">
+          <p class="roboto-medium text-xl sm:text-2xl leading-8 text-white opacity-70 mb-3">
+            ESCOLHA O SEGURO
+          </p>
+          <h1 class="text-4xl sm:text-6xl poppins-semibold text-white">
+            você seguro<span class="text-amber-400">.</span>
+          </h1>
         </div>
-      </section>
+        <div class="absolute bg-black/90 top-0 bottom-0 left-0 right-0 -z-10"></div>
+      </Section>
 
-      <section class="w-full bg-black/90 pt-20 pb-32">
-        <div class="mx-auto max-w-[1450px]">
-          <div class="flex gap-32 justify-center items-center">
+      <Section>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-10 mb-20 items-center place-items-center">
             <PlanPaymentCard
               details={[
                 "Duas trocas por ano",
@@ -41,70 +40,62 @@ export default function Insurance() {
               typePlanGold={true}
             />
           </div>
-        </div>
-      </section>
+        <div class="absolute bg-black/90 top-0 bottom-0 left-0 right-0 -z-10"></div>
+      </Section>
 
-      <section class="w-full bg-black pt-32 pb-32">
-        <div class="mx-auto max-w-[1400px]">
-          <p class="text-7xl poppins-semibold mb-16 text-white">
+      <Section>
+          <p class="text-4xl md:text-6xl poppins-semibold mb-16 text-white pt-20">
             nossas vantagens<span class="text-amber-400">.</span>
           </p>
-          <section class="flex gap-32 justify-center">
-            <div class="flex flex-col gap-8 w-1/5 justify-between">
-              <InfoCard
-                srcIcon="src/assets/icons/bike_icon.svg"
-                alt="Bike Icon"
-                title="Reparo Elétrico"
-                description="Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra."
-              />
-              <InfoCard
-                srcIcon="src/assets/icons/crosshair_icon.svg"
-                alt="Crosshair Icon"
-                title="Recuperação"
-                description="Recuperamos Bikcrafts roubadas sem custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você."
-              />
-            </div>
-            <div class="flex flex-col gap-8 w-1/5 justify-between">
-              <InfoCard
-                srcIcon="src/assets/icons/waves_icon.svg"
-                alt="Waves Icon"
-                title="Reparo de Quadro"
-                description="Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar."
-              />
-              <InfoCard
-                srcIcon="src/assets/icons/padlock_icon.svg"
-                alt="Padlock Icon"
-                title="Segurança"
-                description="O nosso seguro garante que todo reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft."
-              />
-            </div>
-            <div class="flex flex-col gap-8 w-1/5 justify-between">
-              <InfoCard
-                srcIcon="src/assets/icons/plant_icon.svg"
-                alt="Plant Icon"
-                title="Sustentável"
-                description="Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto."
-              />
-              <InfoCard
-                srcIcon="src/assets/icons/velocity_icon.svg"
-                alt="Velocity Icon"
-                title="Velocidade"
-                description="Desfrute da velocidade eficiente que nossas bikes conseguem alcançar, com os motores você consegue chegar até 40Km/h."
-              />
-            </div>
-          </section>
-        </div>
-      </section>
+          <section class="grid gap-32 md:grid-cols-2 lg:grid-cols-3 pb-20">
+            <InfoCard
+              srcIcon="src/assets/icons/bike_icon.svg"
+              alt="Bike Icon"
+              title="Reparo Elétrico"
+              description="Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra."
+            />
+            <InfoCard
+              srcIcon="src/assets/icons/crosshair_icon.svg"
+              alt="Crosshair Icon"
+              title="Recuperação"
+              description="Recuperamos Bikcrafts roubadas sem custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você."
+            />
 
-      <section class="w-full pt-32 pb-32">
-        <div class="max-w-[1400px] mx-auto">
-          <p class="text-7xl poppins-semibold mb-16 text-black">
+            <InfoCard
+              srcIcon="src/assets/icons/waves_icon.svg"
+              alt="Waves Icon"
+              title="Reparo de Quadro"
+              description="Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar."
+            />
+            <InfoCard
+              srcIcon="src/assets/icons/padlock_icon.svg"
+              alt="Padlock Icon"
+              title="Segurança"
+              description="O nosso seguro garante que todo reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft."
+            />
+
+            <InfoCard
+              srcIcon="src/assets/icons/plant_icon.svg"
+              alt="Plant Icon"
+              title="Sustentável"
+              description="Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto."
+            />
+            <InfoCard
+              srcIcon="src/assets/icons/velocity_icon.svg"
+              alt="Velocity Icon"
+              title="Velocidade"
+              description="Desfrute da velocidade eficiente que nossas bikes conseguem alcançar, com os motores você consegue chegar até 40Km/h."
+            />
+          </section>
+          <div class="absolute bg-black top-0 bottom-0 left-0 right-0 -z-10"></div>
+      </Section>
+
+      <Section>
+          <p class="pt-20 text-3xl poppins-semibold mb-16 text-black text-center md:text-left md:text-5xl">
             perguntas frequentes<span class="text-amber-400">.</span>
           </p>
-        </div>
 
-        <div class="max-w-[1400px] mx-auto ">
-          <ul class="max-x-[1400px] mx-auto h-[600px] overflow-hidden">
+          <ul class="max-x-[1400px] mx-auto h-[650px] overflow-hidden">
             <Question
               questionContent="Qual a forma de pagamento vocês aceitam? Como posso entrar em contato?"
               responseContent="Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO
@@ -149,8 +140,7 @@ export default function Insurance() {
               colored={false}
             />
           </ul>
-        </div>
-      </section>
-      </>
+      </Section>
+    </>
   );
 }

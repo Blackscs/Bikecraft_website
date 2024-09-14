@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.imgStyle {
+  @apply object-cover w-full h-full
+}
+
+.cardsSimpleInfo {
+  @apply bg-black py-1 px-3 rounded-lg text-gray-400 flex gap-1 poppins-medium text-xs items-center min-w-40 justify-center
+}
+
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;

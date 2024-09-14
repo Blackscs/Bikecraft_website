@@ -32,7 +32,7 @@ export default function Question(props: Props) {
           onClick={changeState}
           class="flex justify-between w-full items-center"
         >
-          <span class="flex gap-3 items-center justify-center">
+          <span class="flex gap-3 items-center justify-center text-xs md:text-base">
             <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
             {props.questionContent}
           </span>
@@ -50,7 +50,7 @@ export default function Question(props: Props) {
             isOpen()
               ? "opacity-60 translate-y-0 h-auto"
               : "opacity-0 -translate-y-5 h-0"
-          } ml-4 overflow-hidden flex gap-1.5 transition-all duration-100 ease-in-out`}
+          } ml-4 overflow-hidden transition-all duration-100 ease-in-out flex gap-3 items-center justify-center text-xs md:text-base`}
         >
           {props.responseContent}
         </p>

@@ -1,4 +1,5 @@
 import { A } from "@solidjs/router";
+import Button from "components/Button";
 import BikePreviewCard from "components/cards/BikePreviewCard";
 import InfoCard from "components/cards/InfoCard";
 import PlanPaymentCard from "components/cards/PlanPaymentCard";
@@ -8,22 +9,22 @@ export default function Home() {
   return (
     <>
       <Section>
-        <div class="mt-30 gap-14 items-center m-auto mb-32 grid grid-cols-1 xl:grid-cols-2">
-          <div class="text-white m-auto max-w-4xl">
-            <p class="poppins-semibold text-7xl leading-[4.5rem]">
+        <div class="gap-14 items-center m-auto grid justify-center xl:grid-cols-2">
+          <div class="text-white mx-auto grid gap-7 my-10">
+            <p class="poppins-semibold text-4xl md:text-6xl">
               Bicicletas feitas sob medida<span class="text-amber-400">.</span>
             </p>
-            <p class="roboto-light opacity-80 mt-8 leading-normal text-2xl tracking-wide ">
+            <p class="roboto-light opacity-80 leading-normal max-w-screen-md xl:max-w-lg text-base md:text-xl">
               Bicicletas elétricas de alta precisão e qualidade, feitas sob
               medida para o cliente. Explore o mundo na sua velocidade com a
               Bikcraft.
             </p>
-            <button class="bg-amber-400 px-8 py-4 mt-5 poppins-semibold text-lg rounded-md text-slate-900 hover:opacity-90 ">
+            <Button color="gold">
               SELECIONE A SUA
-            </button>
+            </Button>
           </div>
 
-          <div class="m-auto py-24 items-center hidden xl:flex">
+          <div class="m-auto items-center hidden xl:flex">
             <img
               src="src/assets/bikes/home-page/bike_initial.svg"
               alt="Bike initial"
@@ -31,18 +32,18 @@ export default function Home() {
             />
           </div>
 
-          <div class="absolute bottom-0 right-0 top-0 w-full h-[50rem] bg-black -z-10"></div>
+          <div class="absolute bottom-0 xl:bottom-28 right-0 top-0 w-full bg-black -z-10"></div>
         </div>
       </Section>
 
       <Section>
-        <h1 class="mx-auto max-w-screen-2xl px-10 flex">
-          <p class="text-7xl poppins-semibold mb-16">
+        <h1 class="mx-auto max-w-screen-2xl flex my-20">
+          <p class="poppins-semibold text-4xl md:text-6xl">
             escolha a sua<span class="text-amber-400">.</span>
           </p>
         </h1>
 
-        <div class="flex justify-center gap-7 mb-32">
+        <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-3">
           <BikePreviewCard
             srcThumbnail="src/assets/bikes/home-page/magic_might.svg"
             alt="Magic Might bike"
@@ -64,29 +65,31 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section>
-        <div class="mt-30 gap-14 items-center justify-center mb-32 grid grid-cols-1 xl:grid-cols-2">
-          <div class="gap-12 max-w-4xl">
-            <p class="roboto-medium text-2xl leading-8 text-white opacity-70 mb-11">
+      <Section className="pb-32">
+        <div class="mt-30 gap-14 py-20 grid grid-cols-1 xl:grid-cols-2">
+          <div class="h-full flex flex-col justify-center xl:px-0">
+            <p class="roboto-medium text-xl leading-8 text-white opacity-70 mb-11">
               TECNOLOGIA AVANÇADA
             </p>
-            <h1 class="text-7xl poppins-semibold mb-12 text-white">
+            <h1 class="poppins-semibold mb-12 text-white text-4xl md:text-6xl">
               Você escolhe as suas cores e componentes
               <span class="text-yellow-500">.</span>
             </h1>
-            <p class="roboto-light mt-8 leading-normal text-2xl tracking-wide text-white opacity-70 mb-3">
+            <p class="roboto-regular mt-8 leading-normal tracking-wide text-white opacity-70 mb-3 text-base md:text-xl">
               Cada Bikcraft é única e possui a sua identidade. As medidas serão
               exatas para o seu corpo e altura, garantindo maior conforto e
               ergonomia na sua pedalada. Você pode também personalizar
               completamente as suas cores.
             </p>
-            <A
-              href="/"
-              class="poppins-semibold text-2xl border-b-4 border-b-amber-400 text-amber-400"
-            >
-              ESCOLHA UM MODELO
-            </A>
-            <div class="flex gap-9 mt-20">
+            <div class="mt-10">
+              <A
+                href="/"
+                class="poppins-semibold text-2xl border-b-4 border-b-amber-400 text-amber-400"
+              >
+                ESCOLHA UM MODELO
+              </A>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-9 mt-20">
               <InfoCard
                 srcIcon="src/assets/icons/bike_icon.svg"
                 alt="Icon Bike"
@@ -101,7 +104,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div class="m-auto hidden xl:flex">
+          <div class="m-auto hidden xl:flex h-[70rem]">
             <img
               src="src/assets/illustrations/toolkit.svg"
               alt="toolkit image"
@@ -109,52 +112,51 @@ export default function Home() {
             />
           </div>
         </div>
-        <div class="absolute inset-0 m-auto w-full h-[60rem] bg-black -z-10"></div>
+        <div class="absolute bottom-0 top-0 right-0 xl:top-40 xl:bottom-40 w-full bg-black -z-10"></div>
       </Section>
 
-
       <Section>
-      <div class="mx-auto max-w-screen-2xl px-10 flex py-10 pb-5">
-        <p class="text-7xl poppins-semibold mb-24">
-          nossos parceiros<span class="text-amber-400">.</span>
-        </p>
-      </div>
+        <div class="mx-auto max-w-screen-2xl flex my-20">
+          <p class="text-4xl md:text-6xl poppins-semibold">
+            nossos parceiros<span class="text-amber-400">.</span>
+          </p>
+        </div>
 
-        <ul class="grid gap-[2px] grid-cols-2 lg:grid-cols-4 bg-slate-500/20 mb-32">
-          <li class="flex justify-center bg-white p-11">
+        <ul class="grid gap-[2px] grid-cols-1 bg-slate-500/20 mb-32 md:grid-cols-2 lg:grid-cols-4">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
               src="src/assets/logos/partners/caravan.svg"
               alt="caravan icon"
             />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img src="src/assets/logos/partners/dogs.svg" alt="dogs icon" />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
               src="src/assets/logos/partners/flexblog.svg"
               alt="flexblog icon"
             />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img src="src/assets/logos/partners/handel.svg" alt="handel icon" />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
               src="src/assets/logos/partners/wildbeast.svg"
               alt="wildbeast icon"
             />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
               src="src/assets/logos/partners/lescone.svg"
               alt="lescone icon"
             />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img src="src/assets/logos/partners/ranek.svg" alt="ranek icon" />
           </li>
-          <li class="flex justify-center bg-white p-11">
+          <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
               src="src/assets/logos/partners/surfbot.svg"
               alt="surfbot icon"
@@ -170,16 +172,17 @@ export default function Home() {
             alt="woman on bike image"
             class="w-full h-full object-cover hidden xl:flex"
           />
+
           <div class="gap-2 mt-auto p-10">
             <div>
               <img
                 src="src/assets/textual/quotation_mark_begin.svg"
                 alt="quotation mark begin"
-                class="mr-auto"
+                class="mr-auto w-5 lg:w-10"
               />
             </div>
-            <div class="max-w-xl">
-              <p class="merriweather-black-italic text-4xl text-orange-950 leading-normal">
+            <div class="sm:max-w-xl">
+              <p class="merriweather-black-italic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-orange-950 leading-normal">
                 Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft
                 fez foi intensificar o meu amor por esta atividade. Recomendo à
                 todos que amo.
@@ -189,11 +192,11 @@ export default function Home() {
               <img
                 src="src/assets/textual/quotation_mark_end.svg"
                 alt="quotation mark end"
-                class="ml-auto"
+                class="ml-auto w-5 lg:w-10"
               />
             </div>
             <div>
-              <p class="poppins-semibold text-2xl text-amber-950/55">
+              <p class="poppins-semibold text-amber-950/55 text-xl md:text-2xl">
                 Ana Júlia
               </p>
             </div>
@@ -207,11 +210,11 @@ export default function Home() {
       </Section>
 
       <Section>
-        <h1 class="text-7xl poppins-semibold mb-16 text-white py-10 pb-5">
+        <h1 class="poppins-semibold mb-16 text-white py-28 pb-5 text-4xl md:text-6xl">
           escolha o seu plano<span class="text-amber-400">.</span>
         </h1>
 
-        <div class="gap-32 pb-20 grid grid-cols-1 xl:grid-cols-2 mx-auto">
+        <div class="gap-14 xl:gap-32 pb-20 grid grid-cols-1 md:grid-cols-2 mx-auto">
           <PlanPaymentCard
             details={[
               "Duas trocas por ano",

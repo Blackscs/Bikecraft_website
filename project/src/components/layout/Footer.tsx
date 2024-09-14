@@ -3,8 +3,8 @@ import { A } from "@solidjs/router";
 export default function Footer() {
   return (
     <>
-      <footer class="bg-black text-white w-full">
-        <div class="mx-auto max-w-screen-2xl w-full py-16 grid grid-cols-2 xl:grid-cols-3">
+      <footer class="bg-black text-white w-full px-10 grid grid-cols-1 text-center sm:text-left">
+        <div class="mx-auto max-w-screen-2xl w-full py-16 grid grid-cols-1 gap-20 sm:gap-0 sm:grid-cols-3">
           {/* Imagem Bikcraft */}
 
          <img src="src/assets/logos/logo.svg" alt="Bikcraft logo" class="mx-auto"/>
@@ -39,10 +39,10 @@ export default function Footer() {
             <A href="/" class="hover:text-amber-400 text-gray-300">
               Bicicletas
             </A>
-            <A href="/" class="hover:text-amber-400 text-gray-300">
+            <A href="/insurance" class="hover:text-amber-400 text-gray-300">
               Seguros
             </A>
-            <A href="/" class="hover:text-amber-400 text-gray-300">
+            <A href="/contact" class="hover:text-amber-400 text-gray-300">
               Contato
             </A>
             <A href="/" class="hover:text-amber-400 text-gray-300">

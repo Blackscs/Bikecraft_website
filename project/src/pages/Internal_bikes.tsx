@@ -1,77 +1,75 @@
 import { A } from "@solidjs/router";
+import Button from "components/Button";
 import BikePreviewCard from "components/cards/BikePreviewCard";
 import InfoCard from "components/cards/InfoCard";
+import Section from "components/layout/Section";
 
 export default function Internal_bikes() {
   return (
     <>
-      <section class="py-16 w-full bg-black/90">
-        <div class="mx-auto max-w-[1400px]">
-          <div>
-            <p class="roboto-medium text-4xl leading-8 text-white opacity-70 mb-3">
-              R$ 4999
-            </p>
-            <h1 class="text-7xl poppins-semibold text-white">
-              Nimbus Stark<span class="text-amber-400">.</span>
-            </h1>
-          </div>
+      <Section>
+        <div class="pt-20">
+          <p class="roboto-medium text-xl leading-8 text-white opacity-70">
+            R$ 4999
+          </p>
+          <h1 class="poppins-semibold text-white text-4xl md:text-6xl">
+            Nimbus Stark<span class="text-amber-400">.</span>
+          </h1>
         </div>
-      </section>
+        <div class="absolute bg-black/90 top-0 bottom-0 left-0 right-0 -z-10"></div>
+      </Section>
 
-      <section class="w-full flex bg-black/90">
-        <div
-          id="responsive-container"
-          class="mx-auto flex gap-20 max-w-[1400px] mb-36"
-        >
-          <figure id="three-images-left" class="flex flex-col gap-5 w-1/2">
+      <Section>
+        <div class="grid lg:grid-cols-2 gap-10 py-10">
+          <figure id="three-images-left" class="flex flex-col gap-5">
             <img
               src="src/assets/bikes/internal-bike-page/nimbus_stark.svg"
               alt="Imagem da bicicleta Nimbus Stark"
-              class="object-cover w-full h-full"
+              class="imgStyle"
             />
-            <figcaption class="sr-only">
-              Imagens de outras bicicletas
-            </figcaption>
-            <div class="flex gap-5">
+            <div class="hidden 2xl:flex gap-10">
               <img
                 src="src/assets/bikes/internal-bike-page/nebula_cosmic.svg"
                 alt="Imagem da bicicleta Nebula Cosmic"
-                class="object-cover w-full h-full"
+                class="imgStyle"
               />
               <img
                 src="src/assets/bikes/internal-bike-page/magic_might.svg"
                 alt="Imagem da bicicleta Magic Might"
-                class="object-cover w-full h-full"
+                class="imgStyle"
               />
             </div>
           </figure>
 
-          <article id="itens-right" class="w-1/2">
+          <article id="itens-right">
             <section>
-              <p class="roboto-regular text-3xl leading-normal text-gray-400">
+              <p class="roboto-regular leading-normal tracking-wide mb-3 text-sm md:text-xl text-gray-400">
                 A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe.
                 Ela vem equipada com os melhores acessórios, o que garante maior
                 velocidade.
               </p>
 
-              <div class="flex items-center gap-x-5 mt-5">
+              <div class="grid sm:grid-cols-2 sm:gap-0 items-center gap-x-5 mt-5 gap-y-6">
                 <A href="/">
-                  <button class="bg-amber-400 pr-7 pl-8 py-4 poppins-semibold text-lg rounded-md text-slate-900 hover:opacity-90 flex items-center">
+                  <Button color="gold">
                     MAIS SOBRE
-                  </button>
+                  </Button>
                 </A>
-                <div class="flex flex-col gap-1">
-                  <div class="bg-black py-1 px-3 rounded-lg text-gray-400 flex gap-1 poppins-medium text-xs">
+
+                <div class="grid gap-1">
+                  <div class="cardsSimpleInfo">
                     <img
                       src="src/assets/icons/delivery_icon.svg"
                       alt="Ícone de entrega"
+                      class="imgStyle max-w-5"
                     />
                     <p>Entrega em 5 dias</p>
                   </div>
-                  <div class="bg-black py-1 px-3 rounded-lg text-gray-400 flex gap-1 poppins-medium text-xs">
+                  <div class="cardsSimpleInfo">
                     <img
                       src="src/assets/icons/box_icon.svg"
                       alt="Ícone de caixa"
+                      class="imgStyle max-w-5"
                     />
                     <p>18 em estoque</p>
                   </div>
@@ -86,35 +84,31 @@ export default function Internal_bikes() {
               >
                 INFORMAÇÕES
               </h2>
-              <div class="bg-black p-16 rounded-3xl flex gap-20">
-                <div class="flex flex-col gap-8 w-1/2">
-                  <InfoCard
-                    srcIcon="src/assets/icons/bike_icon.svg"
-                    alt="Ícone de bicicleta"
-                    title="Motor Elétrico"
-                    description="Permite você viajar distâncias inimagináveis com a sua bike."
-                  />
-                  <InfoCard
-                    srcIcon="src/assets/icons/velocity_icon.svg"
-                    alt="Ícone de velocidade"
-                    title="40 km/h"
-                    description="A mais rápida bicicleta elétrica disponível hoje no mercado."
-                  />
-                </div>
-                <div class="flex flex-col gap-8 w-1/2">
-                  <InfoCard
-                    srcIcon="src/assets/icons/crosshair_icon.svg"
-                    alt="Ícone de rastreador"
-                    title="Rastreador"
-                    description="Rastreador e sistema anti-furto para garantir o seu sossego."
-                  />
-                  <InfoCard
-                    srcIcon="src/assets/icons/waves_icon.svg"
-                    alt="Ícone de fibra"
-                    title="Fibra de Carbono"
-                    description="Maior proteção possível para a sua Bikcraft com fibra de carbono."
-                  />
-                </div>
+              <div class="bg-black p-16 gap-10 grid md:grid-cols-2 rounded-3xl">
+                <InfoCard
+                  srcIcon="src/assets/icons/bike_icon.svg"
+                  alt="Ícone de bicicleta"
+                  title="Motor Elétrico"
+                  description="Permite você viajar distâncias inimagináveis com a sua bike."
+                />
+                <InfoCard
+                  srcIcon="src/assets/icons/velocity_icon.svg"
+                  alt="Ícone de velocidade"
+                  title="40 km/h"
+                  description="A mais rápida bicicleta elétrica disponível hoje no mercado."
+                />
+                <InfoCard
+                  srcIcon="src/assets/icons/crosshair_icon.svg"
+                  alt="Ícone de rastreador"
+                  title="Rastreador"
+                  description="Rastreador e sistema anti-furto para garantir o seu sossego."
+                />
+                <InfoCard
+                  srcIcon="src/assets/icons/waves_icon.svg"
+                  alt="Ícone de fibra"
+                  title="Fibra de Carbono"
+                  description="Maior proteção possível para a sua Bikcraft com fibra de carbono."
+                />
               </div>
             </section>
 
@@ -145,12 +139,14 @@ export default function Internal_bikes() {
             </section>
           </article>
         </div>
-      </section>
-      <section class="mt-36 mx-auto max-w-[1400px]">
-        <p class="text-7xl poppins-semibold mb-16">
+        <div class="absolute bg-black/90 top-0 bottom-0 left-0 right-0 -z-10"></div>
+      </Section>
+
+      <Section>
+        <p class="poppins-semibold mb-12 text-black text-4xl md:text-6xl my-20">
           escolha a sua<span class="text-amber-400">.</span>
         </p>
-        <div class="flex justify-center gap-7">
+        <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-2">
           <BikePreviewCard
             srcThumbnail="src/assets/bikes/bikes-page/nimbus_stark.svg"
             alt="Magic Might bike"
@@ -164,32 +160,33 @@ export default function Internal_bikes() {
             price={3999}
           />
         </div>
-      </section>
+      </Section>
 
-      <section class="relative w-full items-center flex mt-32">
-        <div class="items-center mx-auto max-w-[1650px] gap-44 justify-center flex-col mt-28 2xl:mt-0 2xl:flex-row 2xl:flex px-10">
-          <div class="h-[700px] m-auto w-3/4 2xl:h-[58rem] 2xl:py-0 2xl:w-1/2">
+      <Section>
+        <div class="mt-30 gap-14 grid grid-cols-1 xl:grid-cols-2">
+          <div class="h-[300px] md:h-[700px]">
             <img
               src="src/assets/illustrations/man_on_bike.svg"
               alt="man on bike image"
-              class="object-cover w-full h-full"
+              class="imgStyle"
             />
           </div>
-          <div class="text-white m-auto w-3/4 2xl:w-1/2">
-            <p class="poppins-semibold text-7xl leading-[4.5rem]">
-                Pedale mais tranquilo com o nosso <span class="text-amber-400">seguro.</span>
+          <div class="text-white m-auto grid gap-7">
+            <p class="poppins-semibold text-white text-4xl md:text-6xl">
+              Pedale mais tranquilo com o nosso
+              <span class="text-amber-400"> seguro.</span>
             </p>
-            <p class="roboto-light opacity-80 mt-8 leading-normal text-2xl tracking-wide ">
-                Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.
+            <p class="roboto-regular leading-normal tracking-wide text-white opacity-70  text-base md:text-xl">
+              Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite
+              diversos benefícios.
             </p>
-            <button class="bg-amber-400 px-8 py-4 mt-5 poppins-semibold text-lg rounded-md text-slate-900 hover:opacity-90 ">
+           <Button color="gold">
               SELECIONE A SUA
-            </button>
+           </Button>
           </div>
         </div>
-
-        <div class="absolute bottom-0 w-full h-[50rem] bg-black -z-10"></div>
-      </section>
-      </>
+        <div class="absolute left-0 bottom-0 top-10 right-0 bg-black -z-10"></div>
+      </Section>
+    </>
   );
 }

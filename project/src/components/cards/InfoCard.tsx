@@ -11,7 +11,7 @@ export default function InfoCard(props: Props) {
         <div class="flex flex-col gap-2">
             <img src={props.srcIcon} alt={props.alt} class="w-6 h-6"/>
             <p class="poppins-medium text-lg text-white">{props.title}</p>
-            <p class="roboto-regular leading-7 text-white opacity-70 text-sm">{props.description} </p>
+            <p class="roboto-regular leading-6 text-white opacity-70 text-sm md:text-base">{props.description} </p>
         </div>
     </>
   );
