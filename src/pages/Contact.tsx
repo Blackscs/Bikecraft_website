@@ -1,4 +1,3 @@
-import Button from "components/Button";
 import ContactForm from "components/forms/ContactForm";
 import Section from "components/layout/Section";
 

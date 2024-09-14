@@ -4,7 +4,7 @@ const [refButton, setRefButton] = createSignal();
 
 export default function ToggleButtonPlans(props: ParentProps) {
   const [isToggle, setIsToggle] = createSignal(false);
-  let refer;
+  let refer: HTMLLIElement | undefined = undefined;
 
   createEffect(() => {
     setIsToggle(refer === refButton())

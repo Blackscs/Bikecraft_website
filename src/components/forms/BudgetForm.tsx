@@ -70,7 +70,7 @@ async function checkCep(cep: string): Promise<{ localidade: string }> {
 }
 
 export default function BudgetForm() {
-  const [budgetForm, { Form, Field }] = createForm<BudgetForm>();
+  const [_budgetForm, { Form, Field }] = createForm<BudgetForm>();
 
   return (
     <>

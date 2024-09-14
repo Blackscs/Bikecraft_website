@@ -7,7 +7,6 @@ import {
   required,
 } from "@modular-forms/solid";
 import Button from "components/Button";
-import ToggleBox from "components/toggle-buttons/ToggleTermBox.tsx";
 
 type BudgetForm = {
   name: string;
@@ -17,7 +16,7 @@ type BudgetForm = {
 };
 
 export default function ContactForm() {
-  const [budgetForm, { Form, Field }] = createForm<BudgetForm>();
+  const [_budgetForm, { Form, Field }] = createForm<BudgetForm>();
 
   return (
     <>

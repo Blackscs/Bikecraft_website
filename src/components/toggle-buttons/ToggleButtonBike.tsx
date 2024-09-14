@@ -59,7 +59,7 @@ const [refButton, setRefButton] = createSignal();
 
 export default function ToggleButtonPlans(props: Props) {
   const [isOpen, setIsOpen] = createSignal(false);
-  let refer;
+  let refer: HTMLLIElement | undefined = undefined;
 
   createEffect(() => {
     setIsOpen(refer === refButton());
