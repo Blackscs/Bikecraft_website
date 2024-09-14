@@ -49,39 +49,39 @@ export default function Insurance() {
           </p>
           <section class="grid gap-32 md:grid-cols-2 lg:grid-cols-3 pb-20">
             <InfoCard
-              srcIcon="src/assets/icons/bike_icon.svg"
+              srcIcon="src//assets/icons/bike_icon.svg"
               alt="Bike Icon"
               title="Reparo Elétrico"
               description="Garantimos o reparo completo do seu motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra."
             />
             <InfoCard
-              srcIcon="src/assets/icons/crosshair_icon.svg"
+              srcIcon="src//assets/icons/crosshair_icon.svg"
               alt="Crosshair Icon"
               title="Recuperação"
               description="Recuperamos Bikcrafts roubadas sem custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você."
             />
 
             <InfoCard
-              srcIcon="src/assets/icons/waves_icon.svg"
+              srcIcon="src//assets/icons/waves_icon.svg"
               alt="Waves Icon"
               title="Reparo de Quadro"
               description="Nossos quadros são feitos para durar para sempre. Mas caso algo ocorra, ficamos felizes em reparar."
             />
             <InfoCard
-              srcIcon="src/assets/icons/padlock_icon.svg"
+              srcIcon="src//assets/icons/padlock_icon.svg"
               alt="Padlock Icon"
               title="Segurança"
               description="O nosso seguro garante que todo reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft."
             />
 
             <InfoCard
-              srcIcon="src/assets/icons/plant_icon.svg"
+              srcIcon="src//assets/icons/plant_icon.svg"
               alt="Plant Icon"
               title="Sustentável"
               description="Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto."
             />
             <InfoCard
-              srcIcon="src/assets/icons/velocity_icon.svg"
+              srcIcon="src//assets/icons/velocity_icon.svg"
               alt="Velocity Icon"
               title="Velocidade"
               description="Desfrute da velocidade eficiente que nossas bikes conseguem alcançar, com os motores você consegue chegar até 40Km/h."

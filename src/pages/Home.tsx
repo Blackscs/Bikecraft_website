@@ -26,7 +26,7 @@ export default function Home() {
 
           <div class="m-auto items-center hidden xl:flex">
             <img
-              src="assets/bikes/home-page/bike_initial.svg"
+              src="/assets/bikes/home-page/bike_initial.svg"
               alt="Bike initial"
               class="object-cover w-full h-full"
             />
@@ -45,19 +45,19 @@ export default function Home() {
 
         <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-3">
           <BikePreviewCard
-            srcThumbnail="assets/bikes/home-page/magic_might.svg"
+            srcThumbnail="/assets/bikes/home-page/magic_might.svg"
             alt="Magic Might bike"
             title="Magic Might"
             price={2499}
           />
           <BikePreviewCard
-            srcThumbnail="assets/bikes/home-page/nimbus_stark.svg"
+            srcThumbnail="/assets/bikes/home-page/nimbus_stark.svg"
             alt="Nimbus Stark bike"
             title="Nimbus Stark"
             price={4999}
           />
           <BikePreviewCard
-            srcThumbnail="assets/bikes/home-page/nebula_cosmic.svg"
+            srcThumbnail="/assets/bikes/home-page/nebula_cosmic.svg"
             alt="Nebula Cosmic bike"
             title="Nebula Cosmic"
             price={3999}
@@ -91,13 +91,13 @@ export default function Home() {
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-9 mt-20">
               <InfoCard
-                srcIcon="assets/icons/bike_icon.svg"
+                srcIcon="/assets/icons/bike_icon.svg"
                 alt="Icon Bike"
                 title="Motor Elétrico"
                 description="Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar."
               />
               <InfoCard
-                srcIcon="assets/icons/crosshair_icon.svg"
+                srcIcon="/assets/icons/crosshair_icon.svg"
                 alt="Icon Crosshair"
                 title="Rastreador"
                 description="Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego."
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <div class="m-auto hidden xl:flex h-[70rem]">
             <img
-              src="assets/illustrations/toolkit.svg"
+              src="/assets/illustrations/toolkit.svg"
               alt="toolkit image"
               class="object-cover w-full h-full"
             />
@@ -125,40 +125,40 @@ export default function Home() {
         <ul class="grid gap-[2px] grid-cols-1 bg-slate-500/20 mb-32 md:grid-cols-2 lg:grid-cols-4">
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
-              src="assets/logos/partners/caravan.svg"
+              src="/assets/logos/partners/caravan.svg"
               alt="caravan icon"
             />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
-            <img src="assets/logos/partners/dogs.svg" alt="dogs icon" />
+            <img src="/assets/logos/partners/dogs.svg" alt="dogs icon" />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
-              src="assets/logos/partners/flexblog.svg"
+              src="/assets/logos/partners/flexblog.svg"
               alt="flexblog icon"
             />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
-            <img src="assets/logos/partners/handel.svg" alt="handel icon" />
+            <img src="/assets/logos/partners/handel.svg" alt="handel icon" />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
-              src="assets/logos/partners/wildbeast.svg"
+              src="/assets/logos/partners/wildbeast.svg"
               alt="wildbeast icon"
             />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
-              src="assets/logos/partners/lescone.svg"
+              src="/assets/logos/partners/lescone.svg"
               alt="lescone icon"
             />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
-            <img src="assets/logos/partners/ranek.svg" alt="ranek icon" />
+            <img src="/assets/logos/partners/ranek.svg" alt="ranek icon" />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img
-              src="assets/logos/partners/surfbot.svg"
+              src="/assets/logos/partners/surfbot.svg"
               alt="surfbot icon"
             />
           </li>
@@ -168,7 +168,7 @@ export default function Home() {
       <Section>
         <div class="grid grid-cols-1 xl:grid-cols-2 justify-items-center">
           <img
-            src="assets/illustrations/woman_on_bike.svg"
+            src="/assets/illustrations/woman_on_bike.svg"
             alt="woman on bike image"
             class="w-full h-full object-cover hidden xl:flex"
           />
@@ -176,7 +176,7 @@ export default function Home() {
           <div class="gap-2 mt-auto p-10">
             <div>
               <img
-                src="assets/textual/quotation_mark_begin.svg"
+                src="/assets/textual/quotation_mark_begin.svg"
                 alt="quotation mark begin"
                 class="mr-auto w-5 lg:w-10"
               />
@@ -190,7 +190,7 @@ export default function Home() {
             </div>
             <div class="max-w-xl">
               <img
-                src="assets/textual/quotation_mark_end.svg"
+                src="/assets/textual/quotation_mark_end.svg"
                 alt="quotation mark end"
                 class="ml-auto w-5 lg:w-10"
               />

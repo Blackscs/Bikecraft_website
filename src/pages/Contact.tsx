@@ -30,7 +30,7 @@ export default function Contact() {
               <div class="roboto-regular text-base flex flex-col bg-black text-gray-300 gap-14">
                 <div class="flex gap-1">
                   <img
-                    src="src/assets/icons/locale_icon.svg"
+                    src="src//assets/icons/locale_icon.svg"
                     alt="locale icon"
                     class="self-start"
                   />
@@ -43,7 +43,7 @@ export default function Contact() {
 
                 <div class="flex gap-1">
                   <img
-                    src="src/assets/icons/mail_icon.svg"
+                    src="src//assets/icons/mail_icon.svg"
                     alt="mail icon"
                     class="self-start"
                   />
@@ -55,7 +55,7 @@ export default function Contact() {
 
                 <div class="flex gap-1">
                   <img
-                    src="src/assets/icons/telephone_icon.svg"
+                    src="src//assets/icons/telephone_icon.svg"
                     alt="telephone icon"
                     class="self-start"
                   />
@@ -65,15 +65,15 @@ export default function Contact() {
 
               <div class="flex gap-10">
                 <img
-                  src="src/assets/logos/social-media/instagram_footer.svg"
+                  src="src//assets/logos/social-media/instagram_footer.svg"
                   alt="instagram logo"
                 />
                 <img
-                  src="src/assets/logos/social-media/facebook_footer.svg"
+                  src="src//assets/logos/social-media/facebook_footer.svg"
                   alt="facebook logo"
                 />
                 <img
-                  src="src/assets/logos/social-media/youtube_footer.svg"
+                  src="src//assets/logos/social-media/youtube_footer.svg"
                   alt="youtube logo"
                 />
               </div>
@@ -104,14 +104,14 @@ export default function Contact() {
             <div class="w-full">
               <img
                 class="object-cover w-full h-full"
-                src="src/assets/locale/rio_de_janeiro.svg"
+                src="src//assets/locale/rio_de_janeiro.svg"
                 alt="rio de janeiro image"
               />
             </div>
 
             <div class="flex flex-col pl-10 gap-8 mt-10">
               <div class="flex gap-5">
-                <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
+                <img src="src//assets/icons/topic_icon.svg" alt="topic icon" />
                 <h1 class="poppins-semibold text-3xl">Rio de Janeiro</h1>
               </div>
               <div class="grid w-full gap-10 sm:grid-cols-2">
@@ -135,7 +135,7 @@ export default function Contact() {
               </div>
 
               <div class="flex gap-3">
-                <img src="src/assets/icons/clock_icon.svg" alt="relogio icon" />
+                <img src="src//assets/icons/clock_icon.svg" alt="relogio icon" />
                 <p class="poppins-semibold text-sm">08-18h de seg à dom</p>
               </div>
             </div>
@@ -145,14 +145,14 @@ export default function Contact() {
             <div class="w-full">
               <img
                 class="object-cover w-full h-full"
-                src="src/assets/locale/sao_paulo.svg"
+                src="src//assets/locale/sao_paulo.svg"
                 alt="sao paulo image"
               />
             </div>
 
             <div class="flex flex-col pl-10 gap-8 mt-10">
               <div class="flex gap-5">
-                <img src="src/assets/icons/topic_icon.svg" alt="topic icon" />
+                <img src="src//assets/icons/topic_icon.svg" alt="topic icon" />
                 <h1 class="poppins-semibold text-3xl">São Paulo</h1>
               </div>
               <div class="grid w-full gap-10 sm:grid-cols-2">
@@ -176,7 +176,7 @@ export default function Contact() {
               </div>
 
               <div class="flex gap-3">
-                <img src="src/assets/icons/clock_icon.svg" alt="relogio icon" />
+                <img src="src//assets/icons/clock_icon.svg" alt="relogio icon" />
                 <p class="poppins-semibold text-sm">08-18h de seg à dom</p>
               </div>
             </div>
