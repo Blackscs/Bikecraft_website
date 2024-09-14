@@ -50,10 +50,8 @@ export default function Internal_bikes() {
               </p>
 
               <div class="grid sm:grid-cols-2 sm:gap-0 items-center gap-x-5 mt-5 gap-y-6">
-                <A href="/">
-                  <Button color="gold">
-                    MAIS SOBRE
-                  </Button>
+                <A href="/budget">
+                  <Button color="gold">ADQUIRA A SUA</Button>
                 </A>
 
                 <div class="grid gap-1">
@@ -147,18 +145,22 @@ export default function Internal_bikes() {
           escolha a sua<span class="text-amber-400">.</span>
         </p>
         <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-2">
-          <BikePreviewCard
-            srcThumbnail="/assets/bikes/bikes-page/nimbus_stark.svg"
-            alt="Magic Might bike"
-            title="Magic Might"
-            price={2499}
-          />
-          <BikePreviewCard
-            srcThumbnail="/assets/bikes/bikes-page/nebula_cosmic.svg"
-            alt="Nebula Cosmic bike"
-            title="Nebula Cosmic"
-            price={3999}
-          />
+          <A href="/budget">
+            <BikePreviewCard
+              srcThumbnail="/assets/bikes/bikes-page/nimbus_stark.svg"
+              alt="Magic Might bike"
+              title="Magic Might"
+              price={2499}
+            />
+          </A>
+          <A href="/budget">
+            <BikePreviewCard
+              srcThumbnail="/assets/bikes/bikes-page/nebula_cosmic.svg"
+              alt="Nebula Cosmic bike"
+              title="Nebula Cosmic"
+              price={3999}
+            />
+          </A>
         </div>
       </Section>
 
@@ -180,9 +182,9 @@ export default function Internal_bikes() {
               Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite
               diversos benefícios.
             </p>
-           <Button color="gold">
-              SELECIONE A SUA
-           </Button>
+            <A href="/bikes">
+              <Button color="gold">SELECIONE A SUA</Button>
+            </A>
           </div>
         </div>
         <div class="absolute left-0 bottom-0 top-10 right-0 bg-black -z-10"></div>

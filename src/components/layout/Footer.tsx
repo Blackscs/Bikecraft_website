@@ -45,7 +45,7 @@ export default function Footer() {
             <A href="/contact" class="hover:text-amber-400 text-gray-300">
               Contato
             </A>
-            <A href="/" class="hover:text-amber-400 text-gray-300">
+            <A href="/terms" class="hover:text-amber-400 text-gray-300">
               Termos e Condições
             </A>
           </div>

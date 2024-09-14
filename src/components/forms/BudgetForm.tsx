@@ -80,7 +80,7 @@ export default function BudgetForm() {
             <img src="/assets/icons/icon_title.svg" alt="icon title" />
             <p class="poppins-semibold text-xs text-gray-700">DADOS PESSOAIS</p>
           </div>
-          <div class="grid grid-cols-2 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2  md:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>Nome</label>
               <Field
@@ -186,7 +186,7 @@ export default function BudgetForm() {
             <img src="/assets/icons/icon_title.svg" alt="icon title" />
             <p class="poppins-semibold text-xs text-gray-700">ENTREGA</p>
           </div>
-          <div class="grid grid-cols-2 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>CEP</label>
               <Field
@@ -244,7 +244,7 @@ export default function BudgetForm() {
             </div>
           </div>
           
-          <div class="grid grid-cols-2 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>Logradouro</label>
               <Field
@@ -286,7 +286,7 @@ export default function BudgetForm() {
             </div>
           </div>
 
-          <div class="grid grid-cols-2 gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>Cidade</label>
               <Field

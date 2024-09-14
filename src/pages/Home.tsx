@@ -19,9 +19,9 @@ export default function Home() {
               medida para o cliente. Explore o mundo na sua velocidade com a
               Bikcraft.
             </p>
-            <Button color="gold">
-              SELECIONE A SUA
-            </Button>
+            <A href="/bikes">
+              <Button color="gold">SELECIONE A SUA</Button>
+            </A>
           </div>
 
           <div class="m-auto items-center hidden xl:flex">
@@ -44,24 +44,33 @@ export default function Home() {
         </h1>
 
         <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-3">
-          <BikePreviewCard
-            srcThumbnail="/assets/bikes/home-page/magic_might.svg"
-            alt="Magic Might bike"
-            title="Magic Might"
-            price={2499}
-          />
-          <BikePreviewCard
-            srcThumbnail="/assets/bikes/home-page/nimbus_stark.svg"
-            alt="Nimbus Stark bike"
-            title="Nimbus Stark"
-            price={4999}
-          />
-          <BikePreviewCard
-            srcThumbnail="/assets/bikes/home-page/nebula_cosmic.svg"
-            alt="Nebula Cosmic bike"
-            title="Nebula Cosmic"
-            price={3999}
-          />
+          <A href="/bikes">
+            <BikePreviewCard
+              srcThumbnail="/assets/bikes/home-page/magic_might.svg"
+              alt="Magic Might bike"
+              title="Magic Might"
+              price={2499}
+            />
+          </A>
+
+          <A href="/bikes">
+            <BikePreviewCard
+              srcThumbnail="/assets/bikes/home-page/nimbus_stark.svg"
+              alt="Nimbus Stark bike"
+              title="Nimbus Stark"
+              price={4999}
+            />
+          </A>
+
+          <A href="/bikes">
+            <BikePreviewCard
+              srcThumbnail="/assets/bikes/home-page/nebula_cosmic.svg"
+              alt="Nebula Cosmic bike"
+              title="Nebula Cosmic"
+              price={3999}
+            />
+          </A>
+
         </div>
       </Section>
 
@@ -83,7 +92,7 @@ export default function Home() {
             </p>
             <div class="mt-10">
               <A
-                href="/"
+                href="/bikes"
                 class="poppins-semibold text-2xl border-b-4 border-b-amber-400 text-amber-400"
               >
                 ESCOLHA UM MODELO
@@ -124,10 +133,7 @@ export default function Home() {
 
         <ul class="grid gap-[2px] grid-cols-1 bg-slate-500/20 mb-32 md:grid-cols-2 lg:grid-cols-4">
           <li class="flex justify-center bg-white p-8 lg:p-11">
-            <img
-              src="/assets/logos/partners/caravan.svg"
-              alt="caravan icon"
-            />
+            <img src="/assets/logos/partners/caravan.svg" alt="caravan icon" />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img src="/assets/logos/partners/dogs.svg" alt="dogs icon" />
@@ -148,19 +154,13 @@ export default function Home() {
             />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
-            <img
-              src="/assets/logos/partners/lescone.svg"
-              alt="lescone icon"
-            />
+            <img src="/assets/logos/partners/lescone.svg" alt="lescone icon" />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
             <img src="/assets/logos/partners/ranek.svg" alt="ranek icon" />
           </li>
           <li class="flex justify-center bg-white p-8 lg:p-11">
-            <img
-              src="/assets/logos/partners/surfbot.svg"
-              alt="surfbot icon"
-            />
+            <img src="/assets/logos/partners/surfbot.svg" alt="surfbot icon" />
           </li>
         </ul>
       </Section>

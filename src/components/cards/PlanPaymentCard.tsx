@@ -1,3 +1,4 @@
+import { A } from "@solidjs/router";
 import Button from "components/Button";
 import { For, Show } from "solid-js";
 
@@ -46,7 +47,9 @@ export default function planPaymentCard(props: Props) {
         </div>
 
         <Button color={`${props.typePlanGold ? "gold" : "gray"}`}>
-          INSCREVA-SE
+          <A href="pages/Budget.tsx">
+            INSCREVA-SE
+          </A>
         </Button>
       </div>
     </>

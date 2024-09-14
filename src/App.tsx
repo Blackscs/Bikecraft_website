@@ -8,6 +8,7 @@ const insurance = lazy(() => import('pages/Insurance'));
 const contact = lazy(() => import('pages/Contact'));
 const internal_bike = lazy(() => import('pages/Internal_bikes'));
 const budget = lazy(() => import('pages/Budget'));
+const terms = lazy(() => import('pages/ConditionsAndTerms') )
 
 export default function App() {
   
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/contact" component={contact} />
         <Route path="/internal_bikes" component={internal_bike} />
         <Route path="/budget" component={budget} />
+        <Route path="/terms" component={terms} />
     </Router>
   );
 }
