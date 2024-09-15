@@ -13,15 +13,15 @@ interface Props {
 function Details(props: Props) {
   return (
     <>
-      <div class="grid justify-center sm:justify-normal gap-4">
+      <div class="grid gap-4">
         <div
           class={`${
             props.isLightMode
               ? "text-black opacity-80"
               : "text-white opacity-80"
-          } flex poppins-medium text-lg opacity-70 gap-2`}
+          } flex poppins-medium text-base opacity-70 gap-2`}
         >
-          <img src="/assets/icons/bike_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/bike_icon.svg" alt="Icon bike" width="20rem"/>
           <span>Motor Elétrico</span>
         </div>
         <div
@@ -29,9 +29,9 @@ function Details(props: Props) {
             props.isLightMode
               ? "text-black opacity-80"
               : "text-white opacity-80"
-          } flex poppins-medium text-lg opacity-70 gap-2`}
+          } flex poppins-medium text-base opacity-70 gap-2`}
         >
-          <img src="/assets/icons/waves_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/waves_icon.svg" alt="Icon bike" width="20rem"/>
           <span>Fibra de Carbono</span>
         </div>
         <div
@@ -39,9 +39,9 @@ function Details(props: Props) {
             props.isLightMode
               ? "text-black opacity-80"
               : "text-white opacity-80"
-          } flex poppins-medium text-lg opacity-70 gap-2`}
+          } flex poppins-medium text-base opacity-70 gap-2`}
         >
-          <img src="/assets/icons/velocity_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/velocity_icon.svg" alt="Icon bike" width="20rem"/>
           <span>40 Km/h</span>
         </div>
         <div
@@ -49,9 +49,9 @@ function Details(props: Props) {
             props.isLightMode
               ? "text-black opacity-80"
               : "text-white opacity-80"
-          } flex poppins-medium text-lg opacity-70 gap-2`}
+          } flex poppins-medium text-base opacity-70 gap-2`}
         >
-          <img src="/assets/icons/crosshair_icon.svg" alt="Icon bike" />
+          <img src="/assets/icons/crosshair_icon.svg" alt="Icon bike" width="20rem"/>
           <span>Rastreador</span>
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function BikeDetailCard(props: Props) {
                   props.isLightMode
                     ? "text-black opacity-80"
                     : "text-white opacity-90"
-                } roboto-regular text-lg`}
+                } roboto-regular text-base`}
               >
                 {props.description}
               </p>

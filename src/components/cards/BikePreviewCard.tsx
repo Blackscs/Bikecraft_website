@@ -9,7 +9,7 @@ export default function BikePreviewCard(props: Props) {
   return (
     <>
       <div class="flex flex-col mx-auto">
-        <img src={props.srcThumbnail} alt={props.alt} class="mb-5 w-72 xl:w-full" />
+        <img src={props.srcThumbnail} alt={props.alt} class="mb-3 xl:w-full" />
         <span class="poppins-semibold text-xl xl:text-2xl">
           <span class="text-amber-400">•</span> {props.title}
         </span>

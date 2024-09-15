@@ -74,7 +74,7 @@ export default function BudgetForm() {
 
   return (
     <>
-      <Form class="col-span-3 px-20 h-full bg-white p-20 flex flex-col gap-2 rounded-r-lg">
+      <Form class="col-span-3 h-full bg-white  flex flex-col gap-2 rounded-r-lg px-8 py-20 md:p-20">
         <div id="second-col">
           <div class="flex gap-2 mb-2">
             <img src="/assets/icons/icon_title.svg" alt="icon title" />

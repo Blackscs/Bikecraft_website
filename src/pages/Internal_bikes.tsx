@@ -144,7 +144,7 @@ export default function Internal_bikes() {
         <p class="poppins-semibold mb-12 text-black text-4xl md:text-6xl my-20">
           escolha a sua<span class="text-amber-400">.</span>
         </p>
-        <div class="grid justify-center gap-7 mb-32 grid-cols-1 md:grid-cols-2">
+        <div class="grid place-items-center gap-7 mb-32 grid-cols-1 md:grid-cols-2">
           <A href="/budget">
             <BikePreviewCard
               srcThumbnail="/assets/bikes/bikes-page/nimbus_stark.svg"

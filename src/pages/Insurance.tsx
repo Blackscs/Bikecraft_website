@@ -80,6 +80,7 @@ export default function Insurance() {
               title="Sustentável"
               description="Trabalhamos com a filosofia de desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto."
             />
+            
             <InfoCard
               srcIcon="/assets/icons/velocity_icon.svg"
               alt="Velocity Icon"

@@ -47,7 +47,7 @@ export default function planPaymentCard(props: Props) {
         </div>
 
         <Button color={`${props.typePlanGold ? "gold" : "gray"}`}>
-          <A href="pages/Budget.tsx">
+          <A href="/budget">
             INSCREVA-SE
           </A>
         </Button>

@@ -6,18 +6,18 @@ import BudgetForm from "components/forms/BudgetForm";
 export default function Budget() {
  return (
     <>
-      <Section>
+     <Section>
         <div class="py-10">
-          <p class="roboto-medium text-2xl leading-8 text-white opacity-70 mb-3">
+          <p class="roboto-medium text-base md:text-2xl leading-8 text-white opacity-70 mb-3">
             COTAÇÕES NO SEU EMAIL
           </p>
-          <p class="text-7xl poppins-semibold text-white">
-            solicite um orçamento<span class="text-amber-400">.</span>
+          <p class="text-3xl md:text-6xl poppins-semibold text-white">
+          solicite um orçamento<span class="text-amber-400">.</span>
           </p>
         </div>
         <div class="absolute bg-black/90 top-0 bottom-0 left-0 right-0 -z-10"></div>
       </Section>
-
+     
       <Section>
         <div class="grid grid-cols-1 lg:grid-cols-5 max-w-screen-xl mx-auto shadow-md bg-none mb-32">
           <div
