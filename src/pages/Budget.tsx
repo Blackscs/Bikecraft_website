@@ -19,10 +19,10 @@ export default function Budget() {
       </Section>
      
       <Section>
-        <div class="grid grid-cols-1 lg:grid-cols-5 max-w-screen-xl mx-auto shadow-md bg-none mb-32">
+        <div class="grid grid-cols-1 md:grid-cols-5 max-w-screen-xl mx-auto shadow-md bg-none mb-32">
           <div
             id="first-col"
-            class="col-span-2 bg-black flex flex-col gap-5 py-20 px-8 rounded-l-lg xl:p-20"
+            class="col-span-2 bg-black flex flex-col gap-5 py-20 rounded-l-lg px-8 sm:px-28 md:px-10 lg:px-8 py-20 lg:p-20"
           >
             <div class="flex gap-2 ">
               <img src="/assets/icons/icon_title.svg" alt="icon title" />
@@ -48,7 +48,7 @@ export default function Budget() {
               </p>
             </div>
 
-            <div class="flex flex-col gap-5">
+            <div class="grid gap-5">
               <ToggleButtonBike price="4999" srcImage="/assets/bikes/internal-bike-page/nimbus_stark.svg">
                 Nimbus Stark
               </ToggleButtonBike>

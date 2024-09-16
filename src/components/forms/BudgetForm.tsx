@@ -74,13 +74,13 @@ export default function BudgetForm() {
 
   return (
     <>
-      <Form class="col-span-3 h-full bg-white  flex flex-col gap-2 rounded-r-lg px-8 py-20 md:p-20">
+      <Form class="col-span-3 h-full bg-white flex flex-col gap-2 rounded-r-lg px-8 sm:px-28 md:px-10 lg:px-8 py-20 lg:p-20">
         <div id="second-col">
           <div class="flex gap-2 mb-2">
             <img src="/assets/icons/icon_title.svg" alt="icon title" />
             <p class="poppins-semibold text-xs text-gray-700">DADOS PESSOAIS</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2  md:gap-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2  lg:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>Nome</label>
               <Field
@@ -186,7 +186,7 @@ export default function BudgetForm() {
             <img src="/assets/icons/icon_title.svg" alt="icon title" />
             <p class="poppins-semibold text-xs text-gray-700">ENTREGA</p>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>CEP</label>
               <Field
@@ -244,7 +244,7 @@ export default function BudgetForm() {
             </div>
           </div>
           
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>Logradouro</label>
               <Field
@@ -286,7 +286,7 @@ export default function BudgetForm() {
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-10">
             <div class="flex flex-col w-full poppins-medium text-base">
               <label>Cidade</label>
               <Field

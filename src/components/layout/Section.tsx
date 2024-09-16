@@ -8,7 +8,7 @@ export default function Section(props: SectionProps) {
   return (
     <>
       <section class={`relative w-full items-center flex justify-center`}>
-        <div class={`mx-auto max-w-screen-xl w-full px-10`}>
+        <div class={`mx-auto max-w-screen-xl w-full px-6 md:px-10`}>
             {props.children}
         </div>
       </section>

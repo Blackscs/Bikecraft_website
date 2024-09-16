@@ -5,47 +5,46 @@ interface Props extends ParentProps {
   price: string;
 }
 
+interface Description {
+  content: string;
+  icon: string;
+}
+
+function Description(props: Description) {
+  return (
+    <div class="text-black opacity-80 poppins-medium text-sm gap-2 flex">
+      <img class="max-w-3" src={props.icon} alt="Icon bike" />
+      <span class="text-xs text-left">{props.content}</span>
+    </div>
+  );
+}
+
 function Detail(props: { srcImage: string }) {
   return (
     <>
-      <div class="flex justify-between items-center mt-5">
-        <div class="flex flex-col gap-2">
-          <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
-            <img
-              class="w-4"
-              src="/assets/icons/bike_icon.svg"
-              alt="Icon bike"
-            />
-            <span class="text-xs">Motor Elétrico</span>
-          </div>
-          <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
-            <img
-              class="w-4"
-              src="/assets/icons/waves_icon.svg"
-              alt="Icon bike"
-            />
-            <span class="text-xs">Fibra de Carbono</span>
-          </div>
-          <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
-            <img
-              class="w-4"
-              src="/assets/icons/velocity_icon.svg"
-              alt="Icon bike"
-            />
-            <span class="text-xs">40 Km/h</span>
-          </div>
-          <div class="text-black opacity-80 flex poppins-medium text-sm gap-2">
-            <img
-              class="w-4"
-              src="/assets/icons/crosshair_icon.svg"
-              alt="Icon bike"
-            />
-            <span class="text-xs">Rastreador</span>
-          </div>
+      <div class="flex flex-col-reverse gap-3 max-w-screen-sm lg:justify-around lg:flex-row lg:items-center mt-5 mx-auto">
+        <div class="grid gap-1 w-full mx-auto">
+          <Description
+            content="Motor elétrico"
+            icon="/assets/icons/bike_icon.svg"
+          />
+          <Description
+            content="Fibra de Carbono"
+            icon="/assets/icons/waves_icon.svg"
+          />
+          <Description
+            content="40 Km/h"
+            icon="/assets/icons/velocity_icon.svg"
+          />
+          <Description
+            content="Rastreador"
+            icon="/assets/icons/crosshair_icon.svg"
+          />
         </div>
-        <div class="h-24 flex w-36 bg-red-400 rounded-lg overflow-hidden">
+
+        <div class="flex justify-center h-32 w-full">
           <img
-            class="object-cover h-full w-full"
+            class="object-cover rounded-lg aspect-video"
             src={props.srcImage}
             alt="nimbus stark img"
           />
@@ -76,9 +75,9 @@ export default function ToggleButtonPlans(props: Props) {
         onclick={changeState}
         class={`${
           isOpen() ? "bg-white text-black" : "bg-white/20 text-white"
-        } gap-4 pl-5 pr-5 py-3 poppins-semibold text-lg rounded-md hover:opacity-90`}
+        } gap-4 pl-4 pr-4 py-3 poppins-semibold text-lg rounded-md hover:opacity-90 relative`}
       >
-        <div id="nimbus-stark" class="flex relative items-center gap-2 w-full">
+        <div id="nimbus-stark" class="flex items-center gap-2 w-full">
           <div
             class={`flex rounded-lg border border-gray-500 p-[5px] justify-center items-center`}
           >
@@ -91,8 +90,9 @@ export default function ToggleButtonPlans(props: Props) {
             </Show>
           </div>
           {props.children}
+
           <Show when={isOpen()}>
-            <span class="absolute poppins-medium text-base end-0">
+            <span class="absolute poppins-medium text-base right-5 bottom-2 end-0 lg:top-3">
               R$ {props.price}
             </span>
           </Show>
